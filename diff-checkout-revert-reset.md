@@ -1,9 +1,9 @@
 > 알아볼 명령어
 
 [diff](#git-diff)
-[checkout](#git-)
-[reset]()
-[revert]()
+[checkout](#git-checkout)
+[reset](#git-reset)
+[revert](#git-revert)
 
 <hr />
 
@@ -55,7 +55,7 @@ Git에는 크게 *Untracked*, *Tracked* 두 가지 상태가 있다고 했다.
 - *Modified*: *Tracked*인 파일의 변경점이 있음
 - *Staged*: 변경한 파일을 **add** 했을 때의 상태. 커밋할 준비가 되었음을 뜻한다. 커밋할 경우 다시 *Unmodified* 상태가 된다.
 
-# git checkout
+# git checkout (restore)
 
 ➡️ 현재 **switch**와 **restore**로 분리되었다.
 
@@ -82,3 +82,13 @@ Git에는 크게 *Untracked*, *Tracked* 두 가지 상태가 있다고 했다.
 무슨 말인지 모르겠으니까 직접 해보자
 
 우선 커밋을 한 후에 `git revert HEAD`를 한다. 현재 HEAD를 취소하고 이전 HEAD로 돌아간다는 뜻이다.
+
+![Alt text](image-3.png)
+
+**reset** 이전 커밋으로 직접 되돌아갔다면 **revert**는 현재 커밋 위에 이전 커밋을 덮어씌우는 개념이기 때문에 새로운 커밋이 하나 추가되었다.
+
+> 그래서 언제 쓰는데
+
+커밋을 이미 **push**해서 서버에 저장해버린 경우에 주로 사용한다.
+
+서버에는 이미 잘못된 커밋이 저장되었기 때문에 클라이언트에서 **reset**을 해봤자 서버에서는 되돌릴 수 없다. 그래서 커밋을 덮어쓰는 **revert**를 사용한다.
