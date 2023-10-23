@@ -1,6 +1,10 @@
-# GIT
+# Git
 
 초보적인 수준으로만 깃을 다루는 것 같아 따로 알아보기 위한 목적으로 작성함
+
+> 출처 ⬇️
+
+[믿고보는 제로초](https://www.zerocho.com/category/Git)
 
 #### git.html
 
@@ -28,5 +32,8 @@ p {
 }
 ```
 
-- [GIT 저장소 생성(init), commit하기](./init-commit.md)
-- 
+## INDEX
+
+- [Git 저장소 생성(init), commit하기](./init-commit.md)
+- [Github 사용하기, remote, clone, push, pull](./remote-clone-push-pull.md)
+- [commit 수정하기](./diff-checkout-revert-reset.md)
