@@ -36,4 +36,6 @@ p {
 
 - [Git 저장소 생성(init), commit하기](./init-commit.md)
 - [Github 사용하기, remote, clone, push, pull](./remote-clone-push-pull.md)
-- [commit 수정하기](./diff-checkout-revert-reset.md)
+- [커밋 수정하기](./diff-checkout-revert-reset.md)
+- [브랜치 관리하기](./branch.md)
+- [브랜치 병합하기](./)
