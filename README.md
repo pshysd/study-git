@@ -38,4 +38,4 @@ p {
 - [Github 사용하기, remote, clone, push, pull](./remote-clone-push-pull.md)
 - [커밋 수정하기](./diff-checkout-revert-reset.md)
 - [브랜치 관리하기](./branch.md)
-- [브랜치 병합하기](./)
+- [브랜치 병합하기](./merge-rebase.md)
